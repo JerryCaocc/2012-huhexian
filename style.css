@@ -1397,7 +1397,7 @@ img.post-secret-qr {
     max-width: 200px;
     border: 1px solid #888;
     padding: 4px 12px 0;
-	margin: 10px 0 0 16px;
+	margin: 10px 0 10px 16px;
 }
 .toc_title {
     font-weight: bold;
