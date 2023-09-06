@@ -70,9 +70,11 @@
 		<?php endif; ?>
 
 		<?php if ( is_single() ) : ?>
-			<footer class="content-foot"><!--文章页脚部显示修改-->
-				<?php the_tags('⚑Tags：','、'); ?>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			</footer><!-- .content-foot -->
+            <?php if ( has_tag() ) : ?> <!--文章有标签才显示页脚-->
+                <footer class="content-foot"><!--文章页脚部显示修改-->
+                    <?php the_tags('⚑Tags：','、'); ?>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                </footer><!-- .content-foot -->
+            <?php endif;  // has_tag() ?>
 		<?php else : ?>
 			<footer class="home-foot"><!--除文章页脚部显示修改-->
 				◷<?php echo the_time('Y/m/j'); ?>&nbsp&nbsp

@@ -7,19 +7,19 @@
  */
 ?>
 	</div><!-- #main .wrapper -->
-	<footer id="colophon" role="contentinfo">
-		<div class="site-info">
-			<?php if ( ox_get_option( 'footerinfo_first' ) ) { echo ox_get_option( 'footerinfo_first' ); } ?>
-			<p>版权所有 &copy; (2018 - <?php echo date( "Y" ); ?>)  <a href="https://zuofei.net">今是昨非</a>│<a href="https://zuofei.net/wp-sitemap.xml">网站地图</a>│服务器提供商: <a href="https://app.cloudcone.com/?ref=9587">CloudCone </a>.<br>程序：WordPress│主题：Twenty Twelve│本站禁止任何形式的文章转载<br><?php echo allwords(); ?>
-</p>
-		</div><!-- .site-info -->
-		<?php if ( ox_get_option( 'footerinfo' ) ) : ?>
-			<div class="footerinfo">
-				<?php echo ox_get_option( 'footerinfo' ); ?>
-				
-			</div>
-		<?php endif ?>
-	</footer><!-- #colophon -->
+<footer id="colophon" role="contentinfo">
+    <div class="site-info">
+        <?php if ( ox_get_option( 'footerinfo_first' ) ) { echo ox_get_option( 'footerinfo_first' ); } ?>
+        <p>版权所有 &copy; (2018 - <?php echo date( "Y" ); ?>)  <a href="https://www.jerryllc.com">我不是Jerry</a>│服务器提供商: <a href="https://www.oracle.com/cloud/">OracleCloud </a>.<br>程序：WordPress│主题：Twenty Twelve│本站禁止任何形式的文章转载<br><?php echo allwords(); ?>
+        </p>
+    </div><!-- .site-info -->
+    <?php if ( ox_get_option( 'footerinfo' ) ) : ?>
+        <div class="footerinfo">
+            <?php echo ox_get_option( 'footerinfo' ); ?>
+
+        </div>
+    <?php endif ?>
+</footer><!-- #colophon -->
 
 	<ul id="scroll">
 		<li><a class="scroll-t" title="返回顶部"><i class="icon-up-big"></i></a></li>
