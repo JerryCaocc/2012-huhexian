@@ -646,7 +646,7 @@ function commentauthor($comment_ID = 0) {
         echo "<b class='fn'>".$author."</b>";
     } else {
         if ( !is_user_logged_in() ) {
-            echo "<b class='fn'><a href='".get_template_directory_uri()."/r.php?".base64url_encode( $url )."' rel='nofollow noopener noreferrer' target='_blank' title='".$url."' class='url'>$author</a></b>".theme_comment_count_lv( theme_comment_count_byemail( $comment_temp->comment_author_email )).theme_check_comment_url_in_bookmarks( $url );
+            echo "<b class='fn'><a href='".$url."' rel='nofollow noopener noreferrer' target='_blank' title='".$url."' class='url'>$author</a></b>".theme_comment_count_lv( theme_comment_count_byemail( $comment_temp->comment_author_email )).theme_check_comment_url_in_bookmarks( $url );
         } else {
             echo "<b class='fn'><a href='".$url."' rel='nofollow noopener noreferrer' target='_blank' title='".$url."' class='url'>$author</a></b>".theme_comment_count_lv( theme_comment_count_byemail( $comment_temp->comment_author_email )).theme_check_comment_url_in_bookmarks( $url );
         }
@@ -664,7 +664,7 @@ function link_jump( $content ){
             foreach( $matches[2] as $key => $val ){
                 if( strpos($val, '://' ) !==false && !preg_match( '/\.(jpg|jepg|png|ico|bmp|gif|tiff)/i', $val ) ){
                     if( preg_match( '/nofollow/i', $matches[4][$key] ) ) {
-                        $content = str_replace( "href=\"$val\"", "href=\"".get_template_directory_uri()."/r.php?".base64url_encode( $val )."\" title=\"$post->post_title $val\" target=\"_blank\" rel=\"nofollow noopener\"", $content );
+                        $content = str_replace( "href=\"$val\"", "href=\"".$val."\" title=\"$post->post_title $val\" target=\"_blank\" rel=\"nofollow noopener\"", $content );
                     } else if( strpos( $val, home_url() ) === false ){
                         $content = str_replace( "href=\"$val\"", "href=\"".$val."\" title=\"$post->post_title $val\" target=\"_blank\" rel=\"noopener noreferrer\"", $content );
                     }
@@ -702,7 +702,7 @@ function text_content_replace($content) {
         foreach( $matches[2] as $key => $val ){
             if( strpos($val,'://')!==false && strpos($val,home_url())===false && !preg_match('/\.(jpg|jepg|png|ico|bmp|gif|tiff)/i',$val) ){
                 if( preg_match( '/nofollow/i', $matches[4][$key] ) ) {
-                    $content=str_replace("href=\"$val\"", "href=\"".get_template_directory_uri()."/r.php?".base64url_encode( $val )."\" title=\"$val\" target=\"_blank\" rel=\"nofollow noopener\"",$content);
+                    $content=str_replace("href=\"$val\"", "href=\"$val\" title=\"$val\" target=\"_blank\" rel=\"nofollow noopener\"",$content);
                 } else {
                     $content=str_replace("href=\"$val\"", "href=\"$val\" title=\"$val\" target=\"_blank\" rel=\"nofollow noopener\"",$content);
                 }
@@ -909,7 +909,7 @@ function allreaders_cy() {
             foreach( $matches[2] as $key => $val ){
                 if( strpos($val,'://')!==false && strpos($val,home_url())===false && !preg_match('/\.(jpg|jepg|png|ico|bmp|gif|tiff)/i',$val) && !preg_match('/(ed2k|thunder|Flashget|flashget|qqdl):\/\//i',$val )){
                     if( preg_match( '/nofollow/i', $matches[4][$key] ) ) {
-                        $mostactive = str_replace( "href=\"$val\"", "href=\"".get_template_directory_uri()."/r.php?".base64url_encode( $val )."\" title=\"$val\" target=\"_blank\" rel=\"nofollow noopener\"", $mostactive );
+                        $mostactive = str_replace( "href=\"$val\"", "href=\"$val\" title=\"$val\" target=\"_blank\" rel=\"nofollow noopener\"", $mostactive );
                     } else {
                         $mostactive = str_replace( "href=\"$val\"", "href=\"$val\" title=\"$val\" target=\"_blank\" rel=\"nofollow noopener\"", $mostactive );
                     }
