@@ -1653,10 +1653,9 @@ default:
             function wp_admin_favicon() {
                 if ( ox_get_option( 'custom_favicon_admin' ) ) {
                     echo ox_get_option( 'custom_favicon_admin' );
+                }else {
+                    echo '<link rel="shortcut icon" href="'.get_bloginfo( "template_directory" ).'/images/favicon.ico">';
                 }
-// 		else {
-// 			echo '<link rel="shortcut icon" href="'.get_bloginfo( "template_directory" ).'/images/favicon.ico">';
-// 		}
             }
         }
         add_action( 'admin_head', 'wp_admin_favicon' );
