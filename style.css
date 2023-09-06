@@ -129,7 +129,6 @@ section {
 	display: block;
     line-height: 1.846153846;
 }
-}
 audio,
 canvas,
 video {
@@ -512,12 +511,12 @@ img.wp-smiley,
 /*fontello 图标字体*/
 @font-face {
 	font-family: 'fontello';
-	src: url('.../../font/fontello.eot');
-	src: url('.../../font/fontello.eot#iefix') format('embedded-opentype'),
-		 url('.../../font/fontello.woff2') format('woff2'),
-		 url('.../../font/fontello.woff') format('woff'),
-		 url('.../../font/fontello.ttf') format('truetype'),
-		 url('.../../font/fontello.svg#fontello') format('svg');
+	src: url('font/fontello.eot');
+	src: url('font/fontello.eot#iefix') format('embedded-opentype'),
+		 url('font/fontello.woff2') format('woff2'),
+		 url('font/fontello.woff') format('woff'),
+		 url('font/fontello.ttf') format('truetype'),
+		 url('font/fontello.svg#fontello') format('svg');
 	font-weight: normal;
 	font-style: normal;
   }
@@ -1505,7 +1504,7 @@ img.post-secret-qr {
 }
 /** 正文小工具 **/
 #single-widget {
-	margin: 16px 0 40x;
+	margin: 16px 0 40px;
 	margin: 1.6rem 0 4rem;
 }
 #single-widget h3 {
@@ -2905,13 +2904,13 @@ html.dark, .dark body {
 		max-width: 200px;
 		border: 1px solid #888;
 		padding: 4px 12px 0;
-		margin: 10px 0 0 16px;
+		margin: 10px 0 10px 16px;
 		max-height: 240px;
 		overflow-x: auto;
 	}
 
 /**友情链接**/
 .link-content li{float:left;text-align: center;width: 100px;font-size:14px;margin-bottom:10px;list-style-type: none;}
-.link-content li img{border-radius:100%;width:64px;height=64px;transition:0.5s;-webkit-transtion:1.5s}
+.link-content li img{border-radius:100%;width:64px;height:64px;transition:0.5s;-webkit-transtion:1.5s}
 .link-content li span{display:block}
 .link-content li:hover img{transform:rotate(360deg);-webkit-transform:rotate(360deg);}
