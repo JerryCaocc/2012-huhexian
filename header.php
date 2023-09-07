@@ -49,9 +49,9 @@
 	<header id="masthead" class="site-header">
 
 		<hgroup>
-<!--		    <a href="https://zuofei.net/" title="回到首页"><img src="https://dogefs.s3.ladydaily.com/lucy/storage/1680832936501.png" alt="胡鹤仙"width="70" height="70"/></a>-->
+		    <a href="https://www.jerryllc.com" title="回到首页"><img src="https://axlgpnw9a3vl.objectstorage.ap-singapore-1.oci.customer-oci.com/n/axlgpnw9a3vl/b/bucket-20230905-1034/o/logo.png" alt="" width="70" height="70"/></a>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?><span class="logo_cursor"></span></h2>
 			<?php
 				//current_user_can('administrator') && 
 				if ( ox_get_option( 'site_title_quote' ) ) {

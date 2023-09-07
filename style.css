@@ -677,6 +677,8 @@ a:hover {
 	font-size: 1.3rem;
 	line-height: 1.846153846;
 	color: #757575;
+	display: flex;
+	align-items: center;
 }
 .header-image {
 	margin-top: 24px;
@@ -2687,7 +2689,62 @@ html.dark, .dark body {
      border:0;
  }
 
- /* 调整边栏标题字体大小与底边距离 */
+.logobox{
+	display: flex;
+	align-items: center;
+	flex: 0 0 auto;
+}
+
+.logo_cursor {
+	display: inline-block;
+	width: 2px;
+	height: 1.3rem;
+	/*margin-top: 1.8px;*/
+	background: #fe5186;
+	margin-left: 1.6px;
+	border-radius: 1px;
+	-webkit-animation: cursor 1s infinite;
+	animation: cursor 1s infinite;
+}
+
+@-webkit-keyframes cursor {
+	0% {
+		opacity: 0
+	}
+
+	50% {
+		opacity: 1
+	}
+
+	to {
+		opacity: 0
+	}
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0
+	}
+}
+
+@media screen and (max-width:500px) {
+	.site-header h2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+/* 调整边栏标题字体大小与底边距离 */
 .widget-area .widget h3 {
 	color:#515151;
 	}
