@@ -56,7 +56,7 @@ function twentytwelve_setup() {
     load_theme_textdomain( 'twentytwelve' );
 
     // This theme uses wp_nav_menu() in one location.
-    register_nav_menu( 'primary', __( 'Primary Menu', 'twentytwelve' ) );
+    register_nav_menu( 'primary', __( '主菜单', 'twentytwelve' ) );
 }
 add_action( 'after_setup_theme', 'twentytwelve_setup' );
 
@@ -311,7 +311,7 @@ function the_crumbs() {
         'seperator'   =>  ' / ',
         'id'          =>  'breadcrumb',
         'classes'     =>  'breadcrumb',
-        'home_title'  =>  esc_html__( '⚐ Home', '' )
+        'home_title'  =>  esc_html__( '⚐ 首页', '' )
     );
     $sep  = '<li class="seperator">'. esc_html( $defaults['seperator'] ) .'</li>';
     // Start the breadcrumb with a link to your homepage
@@ -1109,9 +1109,9 @@ function fa_ajax_comment_callback(){
             <?php
             $commenter = wp_get_current_commenter();
             if ( $commenter['comment_author_email'] ) {
-                $moderation_note = __( 'Your comment is awaiting moderation.', 'twentytwelve' );
+                $moderation_note = __( '您的评论正在等待审核。', 'twentytwelve' );
             } else {
-                $moderation_note = __( 'Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved.', 'twentytwelve' );
+                $moderation_note = __( '您的评论正在等待审核。 这是预览; 您的评论在获得批准后将可见。', 'twentytwelve' );
             }
             ?>
 
@@ -1363,9 +1363,9 @@ default:
             <?php
             $commenter = wp_get_current_commenter();
             if ( $commenter['comment_author_email'] ) {
-                $moderation_note = __( 'Your comment is awaiting moderation.', 'twentytwelve' );
+                $moderation_note = __( '您的评论正在等待审核。', 'twentytwelve' );
             } else {
-                $moderation_note = __( 'Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved.', 'twentytwelve' );
+                $moderation_note = __( '您的评论正在等待审核。 这是预览; 您的评论在获得批准后将可见。', 'twentytwelve' );
             }
             ?>
 
@@ -1388,7 +1388,7 @@ default:
                 <span class="reply">
 						<a class="comment-reply-link" href="javascript:;" onclick="return addComment.moveForm('div-comment-<?php comment_ID() ?>', '<?php comment_ID() ?>', 'respond', '<?php the_ID(); ?>')">回复</a>
 					</span>
-                <?php edit_comment_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
+                <?php edit_comment_link( __( '编辑', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
             </div>
         </article><!-- #comment-## -->
         <?php

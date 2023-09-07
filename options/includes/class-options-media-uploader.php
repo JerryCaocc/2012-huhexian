@@ -67,7 +67,7 @@ class Options_Framework_Media_Uploader {
 				$output .= '<input id="remove-' . $id . '" class="remove-file button" type="button" value="' . __( 'Remove', 'theme-textdomain' ) . '" />' . "\n";
 			}
 		} else {
-			$output .= '<p><i>' . __( 'Upgrade your version of WordPress for full media support.', 'theme-textdomain' ) . '</i></p>';
+			$output .= '<p><i>' . __( '升级您的 WordPress 版本以获得完整的媒体支持。', 'theme-textdomain' ) . '</i></p>';
 		}
 
 		if ( $_desc != '' ) {

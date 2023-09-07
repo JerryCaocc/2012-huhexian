@@ -474,7 +474,7 @@ class WP_Widget_theme_Recent_Posts extends WP_Widget {
 			<?php foreach ( $r->posts as $recent_post ) : ?>
 				<?php
 				$post_title = get_the_title( $recent_post->ID );
-				$title      = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
+				$title      = ( ! empty( $post_title ) ) ? $post_title : __( '(没有标题)' );
 				?>
 				<li>
 					<a href="<?php the_permalink( $recent_post->ID ); ?>" target="_blank" title="<?php echo $title.' - 发布日期：'.get_the_date( '', $recent_post->ID ); ?>"><?php echo $title; ?></a>

@@ -58,7 +58,7 @@
 		</div><!-- .entry-summary -->
 		<?php else : ?>
 		<div class="entry-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
+			<?php the_content( __( '继续阅读 <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
 			<?php wp_link_pages(array('before' => '<div class="page-links">', 'after' => '</div>', 'next_or_number' => 'number')); ?>
 		</div><!-- .entry-content -->
 		<?php
